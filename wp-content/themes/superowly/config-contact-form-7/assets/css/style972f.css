@@ -1,0 +1,86 @@
+
+.widget div.wpcf7 {
+	padding: 0;
+	border: none;
+}
+
+	.wpcf7-form .row:not(:last-child) { margin-bottom: 15px; }
+
+	.wpcf7-display-none { display: none; }
+
+	.vc_row-has-fill .wpcf7 input:not([type="submit"]),
+	.vc_row-has-fill .wpcf7 textarea,
+	.vc_row-has-fill .wpcf7 select {
+		background-color: #fff;
+	}
+	
+	.wpcf7 textarea { height: 140px; }
+
+	.wpcf7 select {
+		width: 100%;
+		color: #858585;
+		border-radius: 20px;
+		height: 45px;
+		padding: 5px 25px;
+		border: 1px solid #858585;
+		background-color: #fff;
+		background-image: url('../../../images/select-arrow.png');
+		background-position: 98% center;
+		background-repeat: no-repeat;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-transition: box-shadow .35s ease, border-color .35s ease;
+		transition: box-shadow .35s ease, border-color .35s ease;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+				appearance: none;
+	}
+
+	.wpcf7-submit {
+		display: inline-block;
+		margin-top: 20px;
+		margin-bottom: 0 !important;
+		letter-spacing: 1px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #fff;
+		background-color: #f05a21;
+		font-family: 'Poppins', sans-serif;
+		border-radius: 30px;
+		padding: 10px 30px 8px;
+		-webkit-box-shadow: 0px 5px 25px 0px rgba(240, 90, 33, 0.35);
+		-moz-box-shadow: 0px 5px 25px 0px rgba(240, 90, 33, 0.35);
+		box-shadow: 0px 5px 25px 0px rgba(240, 90, 33, 0.35);
+		-webkit-transition: all .4s ease;
+       transition: all .4s ease;
+	}
+
+	.wpcf7-submit:hover {
+		color: #fff;
+		box-shadow: none!important;
+		-webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+	}
+
+	.vc_col-sm-4 .wpcf7-submit {
+		float: none;
+		width: 100%;
+	}
+
+	.vc_col-sm-8 .wpcf7-submit {
+		float: none;
+		margin: 25px auto 0;
+		display: block;
+	}
+
+	@media only screen and ( max-width: 767px ) {
+
+		.wpcf7 {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+	}

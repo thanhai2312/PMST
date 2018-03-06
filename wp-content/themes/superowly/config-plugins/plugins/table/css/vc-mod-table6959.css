@@ -1,0 +1,153 @@
+
+.sp-table-holder {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+}
+.sp-table-holder table tr {
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.sp-table-holder table tr.vc-th > td {
+    color: #666;
+	padding: 13px 30px;
+    text-align: left;
+}
+.sp-table-holder table tr > td, 
+.sp-table-holder  table tr > th {
+    padding: 13px 30px;
+    text-align: left;
+}
+.sp-table-holder table tr:not(:first-child) {
+    border-top: 1px solid #e8e8e8;
+}
+.sp-table-holder table tr:hover {
+    background: #f6f6f6;
+}
+.vc_table_cell.vc_cell_border_left{
+	border-left: 1px solid #e8e8e8; 
+}
+.vc_table_cell.vc_cell_border_right{
+	border-right: 1px solid #e8e8e8;
+}
+		
+	/** Classic **/
+	
+	table[class*="vc-table-plugin-theme-classic"] {
+		border-width: 0;
+	}
+	
+	table.vc-table-plugin-theme-classic_purple td,
+	table.vc-table-plugin-theme-classic_orange td,
+	table.vc-table-plugin-theme-classic_pink td,
+	table.vc-table-plugin-theme-classic_blue td,
+	table.vc-table-plugin-theme-classic_green td
+	{
+		border-width: 0;
+	}
+	
+	/** Purple **/
+
+	.sp-table-holder.sp-table-classic_purple {
+		border: 1px solid #d9d9d9;
+	}
+	table.vc-table-plugin-theme-simple_purple tr.vc-th td {
+		border-color: #d9d9d9;
+		background-color: #4A4683;
+		color: #fcfcfc;
+	}
+	.sp-table-holder.wpb_mad_table .vc-table-plugin-theme-simple_purple td.vc_table_cell {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_purple tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_purple tr.vc-th:hover,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_purple tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_purple tr.vc-th:hover { background-color: #4A4683; }
+
+	/** Orange **/
+    .sp-table-holder.sp-table-classic_orange {
+		border: 1px solid #d9d9d9;
+	}
+	table.vc-table-plugin-theme-simple_orange tr.vc-th td {
+		border-color: #d9d9d9;
+		background-color: #ffac14;
+		color: #fcfcfc;
+	}
+	.sp-table-holder.wpb_mad_table .vc-table-plugin-theme-simple_orange td.vc_table_cell {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+	.sp-table-holder.sp-table-classic_orange table tr:hover {
+		background: #ffac14;
+	}
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_orange tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_orange tr.vc-th:hover,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_orange tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_orange tr.vc-th:hover { background-color: #ffac14; }
+
+	/** Pink **/
+     .sp-table-holder.sp-table-classic_pink {
+		border: 1px solid #f64747;
+	}
+	table.vc-table-plugin-theme-simple_pink tr.vc-th td {
+		border-color: #d9d9d9;
+		background-color: #f64747;
+		color: #fcfcfc;
+	}
+	.sp-table-holder.wpb_mad_table .vc-table-plugin-theme-simple_pink td.vc_table_cell {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+	.sp-table-holder.sp-table-classic_pink table tr:hover {
+		background: #fef1f1;
+	}
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_pink tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_pink tr.vc-th:hover,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_pink tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_pink tr.vc-th:hover { background-color: #f64747; }
+
+	/** Blue **/
+
+	.sp-table-holder.sp-table-classic_blue  {
+		border: 1px solid #28abe3;
+	}
+	table.vc-table-plugin-theme-simple_blue tr.vc-th td {
+		border-color: #d9d9d9;
+		background-color: #28abe3;
+		color: #fcfcfc;
+	}
+	.sp-table-holder.wpb_mad_table .vc-table-plugin-theme-simple_blue td.vc_table_cell {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+	.sp-table-holder.sp-table-classic_blue table tr:hover {
+		background: #28abe3;
+	}
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_blue tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_blue tr.vc-th:hover,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_blue tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_blue tr.vc-th:hover { background-color: #28abe3; }
+
+	/** Green **/
+
+	.sp-table-holder.sp-table-classic_green  {
+		border: 1px solid #98c407;
+	}
+	table.vc-table-plugin-theme-simple_green tr.vc-th td {
+		border-color: #d9d9d9;
+		background-color: #98c407;
+		color: #fcfcfc;
+	}
+	.sp-table-holder.wpb_mad_table .vc-table-plugin-theme-simple_green td.vc_table_cell {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+	.sp-table-holder.sp-table-classic_green table tr:hover {
+		background: #98c407;
+	}
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_green tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-classic_green tr.vc-th:hover,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_green tr.vc-th,
+	.sp-table-holder.wpb_mad_table table.vc-table-plugin-theme-simple_green tr.vc-th:hover { background-color: #98c407; }
