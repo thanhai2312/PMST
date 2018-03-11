@@ -149,8 +149,35 @@ button[type=submit]{
 
 <body>
 <?php
-    if(isset($_POST))
+    require './core/init.php';
+    if(isset($_POST["submit"]))
     {
+        if($_POST["name"] && $_POST["pass"] && $_POST["confirmPass"] && $_POST["email"])
+        {
+             $name_su=$_POST["name"];
+            $pass_su=$_POST["pass"];
+            $confirmPass_su=$_POST["confirmPass"];
+            $email_su=$_POST["email"];
+            $sql_name_exist="SELECT username FROM user WHERE username='$name_su'";
+            if($db->num_rows($sql_name_exist))
+            {
+                
+                echo '<script type="text/javascript">alert("ten dang nhap da co roi :)")</script>';
+            }else
+            {
+            $sql_add_acc = "INSERT INTO user VALUES (
+					'',
+					'$name_su',
+					'$pass_su',
+					'$email_su',
+					'1',
+					''
+				)";
+            $db->query($sql_add_acc);
+            $db->close();
+            new Redirect($_DOMAIN.'login.php');
+            }
+        }
         
     }
 ?>
@@ -158,13 +185,13 @@ button[type=submit]{
   
 	<div class="container" data-position="1">
 
-	  <div class="dolly"><a href="http://maluto.com" target="_parent" class="credit"> </a></div>
+	  <div class="dolly"><a href="#" target="_parent" class="credit"> </a></div>
 
 	  <div class="register">
 	  
 	    <h1 class="register-heading">Register </h1>
 	      
-	    <form method="post" id="form" action="">
+            <form method="post" id="form" action="register.php">
 	      	<label for="name">tên người dùng</label>
 	        <input type="text" 
 	               name="name" 
@@ -189,7 +216,7 @@ button[type=submit]{
 	               minlength="2"
 	               class="input-txt" data-pos="4" required/>
 
-	        <button type="submit"> đăng ký </button>
+                <button type="submit" name="submit"> đăng ký </button>
 	    </form>
 
 	  </div>

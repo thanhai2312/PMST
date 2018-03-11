@@ -148,6 +148,23 @@ button[type=submit]{
 </head>
 
 <body>
+    <?php
+        require './core/init.php';
+        if(isset($_POST['submit']))
+        {
+            $email_si=$_POST['email'];
+            $pass_si=$_POST['pass'];
+            $sql_sign_in="SELECT email, password from user WHERE email='$email_si' AND password='$pass_si'";
+            if($db->num_rows($sql_sign_in))
+            {
+                new Redirect($_DOMAIN.'blog.php');
+            }else
+            {
+                echo '<script>alert("email hoặc mật khẩu chưa chính xác")</script>';
+            }
+            
+        }
+    ?>
 
   
   
@@ -175,7 +192,7 @@ button[type=submit]{
                 
                 
 
-	        <button type="submit"> Đăng nhập </button>
+                <button type="submit" name="submit"> Đăng nhập </button>
 	    </form>
 
 	  </div>
