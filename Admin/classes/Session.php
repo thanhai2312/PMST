@@ -3,6 +3,7 @@
 // Lớp session
 class Session {
 	// Hàm bắt đầu session
+       
 	public function start()
 	{
 		session_start();

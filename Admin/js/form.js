@@ -1,4 +1,4 @@
-$_DOMAIN = 'http://localhost:8888/newspage/admin/';
+$_DOMAIN = 'http://localhost:8888/AppForChildren/admin/';
 
 // Đăng nhập
 $('#formSignin button').on('click', function() {

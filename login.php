@@ -149,21 +149,25 @@ button[type=submit]{
 
 <body>
     <?php
+        session_start();
         require './core/init.php';
         if(isset($_POST['submit']))
         {
-            $email_si=$_POST['email'];
+            $name_si=$_POST['username'];
             $pass_si=$_POST['pass'];
-            $sql_sign_in="SELECT email, password from user WHERE email='$email_si' AND password='$pass_si'";
+            $sql_sign_in="SELECT username, password from user WHERE username='$name_si' AND password='$pass_si'";
             if($db->num_rows($sql_sign_in))
             {
-                new Redirect($_DOMAIN.'blog.php');
+                $_SESSION["username"]=$name_si;
+                header("Location:blog.php");
+                exit();
             }else
             {
                 echo '<script>alert("email hoặc mật khẩu chưa chính xác")</script>';
             }
-            
+           $db->close();
         }
+        
     ?>
 
   
@@ -174,12 +178,12 @@ button[type=submit]{
 
 	  <div class="register">
 	  
-	    <h1 class="register-heading">Register </h1>
+	    <h1 class="register-heading">Login </h1>
 	      
 	    <form method="post" id="form" action="">
-	      	<label for="email">Email</label>
-	        <input type="email" 
-	               name="email" 
+	      	<label for="name">usernames</label>
+                <input type="text" 
+	               name="username" 
 	               placeholder="abc123@gmail.com" 
 	               minlength="2"
 	               class="input-txt" data-pos="1" required/>
